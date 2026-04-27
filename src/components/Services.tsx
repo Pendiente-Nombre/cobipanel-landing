@@ -6,7 +6,6 @@ import {
   Paintbrush,
   Layers,
   Layers2,
-  Zap,
   Grid2x2,
 } from 'lucide-react'
 
@@ -58,16 +57,10 @@ const services = [
       'Colocación de loseta cerámica en pisos y muros con niveles y juntas perfectas para proyectos que exigen precisión técnica y estética.',
   },
   {
-    icon: Zap,
-    title: 'Pisos Antiestáticos',
-    description:
-      'Instalación de pisos antiestáticos para ambientes industriales y tecnológicos que requieren control de electricidad estática en sus operaciones.',
-  },
-  {
     icon: Layers2,
-    title: 'Pisos Vinílicos',
+    title: 'Pisos Antiestáticos y Vinílicos',
     description:
-      'Suministro e instalación de pisos vinílicos de alto tráfico para espacios corporativos, logísticos y de uso mixto con acabado premium.',
+      'Instalación de pisos antiestáticos para entornos industriales y tecnológicos, y pisos vinílicos de alto tráfico para espacios corporativos y logísticos.',
   },
 ]
 
@@ -102,16 +95,13 @@ export default function Services() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-white/10">
           {services.map((s, i) => {
             const Icon = s.icon
-            const isLast = i === services.length - 1
             return (
               <motion.div
                 key={s.title}
                 initial={{ opacity: 0, y: 30 }}
                 animate={visible ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.55, delay: 0.15 + i * 0.08 }}
-                className={`group bg-navy-800 hover:bg-navy-700 p-8 transition-colors duration-300 cursor-default ${
-                  isLast ? 'md:col-span-2 lg:col-span-1' : ''
-                }`}
+                className="group bg-navy-800 hover:bg-navy-700 p-8 transition-colors duration-300 cursor-default"
               >
                 <div className="mb-5">
                   <div className="w-12 h-12 flex items-center justify-center bg-amber-500/10 group-hover:bg-amber-500/20 rounded transition-colors duration-300">
