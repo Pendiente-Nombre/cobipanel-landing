@@ -36,8 +36,8 @@ const differentiators = [
   },
   {
     icon: Users,
-    title: 'Experiencia con clientes exigentes',
-    body: 'Hemos trabajado con empresas que operan bajo estándares internacionales: Mercado Libre, Intermex, Universidad de Monterrey, entre otros. Sabemos lo que exigen.',
+    title: 'Trayectoria comprobada',
+    body: 'Más de 30 años ejecutando proyectos para empresas de manufactura, logística, alimentos y sector corporativo. Sabemos lo que exige cada industria y cómo cumplirlo.',
   },
   {
     icon: Lock,

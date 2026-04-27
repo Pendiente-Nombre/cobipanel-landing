@@ -18,8 +18,8 @@ function useInView(threshold = 0.2) {
 }
 
 const stats = [
-  { value: '7+', label: 'Proyectos ejecutados' },
-  { value: '4', label: 'Estados del país' },
+  { value: '+30', label: 'Años de trayectoria' },
+  { value: '7+', label: 'Estados del país' },
   { value: '100%', label: 'Compromiso con la calidad' },
   { value: '0', label: 'Tolerancia a defectos' },
 ]
@@ -48,8 +48,8 @@ export default function About() {
             </div>
             {/* Accent card */}
             <div className="absolute -bottom-8 -right-8 bg-navy-800 text-white p-6 shadow-2xl max-w-xs hidden md:block">
-              <p className="font-krona text-3xl text-amber-500 mb-1">+7</p>
-              <p className="text-sm text-white/70 font-archivo">proyectos de alto nivel ejecutados en México</p>
+              <p className="font-krona text-3xl text-amber-500 mb-1">+30</p>
+              <p className="text-sm text-white/70 font-archivo">años ejecutando acabados arquitectónicos en México</p>
             </div>
             {/* Amber line accent */}
             <div className="absolute top-0 left-0 w-1 h-24 bg-amber-500" />
@@ -69,19 +69,18 @@ export default function About() {
             </h2>
             <div className="space-y-4 text-navy-800/70 font-archivo text-base leading-relaxed mt-8">
               <p>
-                COBIPANEL es una empresa especializada en la ejecución de acabados arquitectónicos
-                con altos estándares de calidad para proyectos industriales, corporativos y de
-                desarrollo de alto nivel en México.
+                Empresa dedicada a la ejecución de acabados arquitectónicos con altos estándares
+                de calidad en proyectos industriales, corporativos y desarrollos de alto nivel.
               </p>
               <p>
-                Trabajamos con las empresas más exigentes del país, desarrollando proyectos que
-                demandan precisión técnica, cumplimiento de plazos y coordinación eficiente en
-                cada etapa del proceso constructivo.
+                Con más de 30 años de trayectoria, hemos participado en proyectos para empresas
+                líderes de manufactura, logística, alimentos, sector educativo y corporativo
+                en más de 7 estados de la República Mexicana.
               </p>
               <p>
-                Nuestra capacidad de ejecución abarca desde naves industriales de gran escala
-                hasta espacios corporativos y educativos de alta exigencia, con presencia
-                en Hidalgo, Nuevo León, Guanajuato, Querétaro y Estado de México.
+                Nuestra experiencia abarca desde naves industriales de gran escala hasta espacios
+                corporativos y educativos de alta exigencia, trabajando junto a las constructoras
+                y desarrolladoras más reconocidas del país.
               </p>
             </div>
 
