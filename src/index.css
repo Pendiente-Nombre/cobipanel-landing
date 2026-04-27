@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Brand Fonts ─── */
+@font-face {
+  font-family: 'Archivo';
+  src: url('/assets/fonts/Archivo-Variable.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Krona One';
+  src: url('/assets/fonts/KronaOne-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ─── Base ─── */
+:root {
+  --navy:       #0D2040;
+  --navy-mid:   #1A3560;
+  --amber:      #F5A623;
+  --amber-dark: #D4880A;
+  --off-white:  #F7F6F3;
+  --text-dark:  #0D2040;
+  --text-mid:   #3D5070;
+  --text-light: #8595AA;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Archivo', sans-serif;
+  background-color: var(--off-white);
+  color: var(--text-dark);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ─── Scrollbar ─── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #f1f1f1; }
+::-webkit-scrollbar-thumb { background: var(--navy-mid); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--navy); }
+
+/* ─── Typography helpers ─── */
+.font-krona { font-family: 'Krona One', sans-serif; }
+.font-archivo { font-family: 'Archivo', sans-serif; }
+
+/* ─── Section base ─── */
+.section-padding {
+  @apply py-24 md:py-32;
+}
+
+/* ─── Custom scrollbar for modal ─── */
+.modal-scroll::-webkit-scrollbar { width: 4px; }
+.modal-scroll::-webkit-scrollbar-thumb { background: rgba(13, 32, 64, 0.3); border-radius: 2px; }
+
+/* ─── Smooth image load ─── */
+img {
+  transition: opacity 0.3s ease;
+}
+img[src=""] {
+  opacity: 0;
+}
+
+/* ─── Utility ─── */
+.brand-underline {
+  position: relative;
+  display: inline-block;
+}
+.brand-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background-color: var(--amber);
+}
