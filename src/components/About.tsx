@@ -80,8 +80,8 @@ export default function About() {
               </p>
               <p>
                 Nuestra capacidad de ejecución abarca desde naves industriales de gran escala
-                hasta espacios corporativos y educativos de alta exigencia, manteniendo siempre
-                los más elevados estándares de calidad y seguridad.
+                hasta espacios corporativos y educativos de alta exigencia, con presencia
+                en Hidalgo, Nuevo León, Guanajuato, Querétaro y Estado de México.
               </p>
             </div>
 

@@ -20,34 +20,34 @@ function useInView(threshold = 0.15) {
 
 const differentiators = [
   {
-    icon: CheckCircle,
-    title: 'Calidad sin concesiones',
-    body: 'Cada proyecto se ejecuta bajo las más estrictas especificaciones técnicas. La calidad no es negociable: es el fundamento de cada obra que entregamos.',
-  },
-  {
     icon: Clock,
-    title: 'Cumplimiento de plazos',
-    body: 'Entregamos en tiempo, siempre. Nuestra planificación rigurosa y coordinación en campo garantizan el cumplimiento de los plazos pactados con el cliente.',
-  },
-  {
-    icon: Lock,
-    title: 'Seguridad en obra',
-    body: 'Operamos bajo protocolos de seguridad industrial estrictos. La protección del personal en campo y del entorno de obra es prioritaria en cada proyecto.',
+    title: 'Entrega en tiempo',
+    body: 'Planificación rigurosa desde el inicio de cada proyecto. Coordinamos fechas, frentes de trabajo y personal para cumplir los plazos pactados sin comprometer el resultado.',
   },
   {
     icon: Microscope,
-    title: 'Precisión técnica',
-    body: 'Contamos con personal técnico especializado capaz de interpretar y ejecutar con precisión los requerimientos de proyectos complejos y de gran escala.',
+    title: 'Ejecución técnica especializada',
+    body: 'Personal con dominio técnico en cada tipo de acabado: tablaroca, pisos, plafones, cancelería. Interpretamos y ejecutamos especificaciones complejas con exactitud.',
   },
   {
-    icon: Leaf,
-    title: 'Responsabilidad y sostenibilidad',
-    body: 'Adoptamos prácticas constructivas responsables con el medio ambiente, buscando minimizar el impacto de cada obra en las comunidades donde operamos.',
+    icon: CheckCircle,
+    title: 'Supervisión permanente en campo',
+    body: 'Presencia continua en obra durante todo el proceso. Cada etapa se verifica antes de avanzar, eliminando retrabajos y asegurando el nivel de terminación requerido.',
   },
   {
     icon: Users,
-    title: 'Orientación al cliente',
-    body: 'Establecemos relaciones de confianza a largo plazo. La transparencia, comunicación constante y el cumplimiento de compromisos definen nuestra relación con cada cliente.',
+    title: 'Experiencia con clientes exigentes',
+    body: 'Hemos trabajado con empresas que operan bajo estándares internacionales: Mercado Libre, Intermex, Universidad de Monterrey, entre otros. Sabemos lo que exigen.',
+  },
+  {
+    icon: Lock,
+    title: 'Protocolos de seguridad industrial',
+    body: 'Operamos dentro de parques y naves industriales con normas estrictas de acceso y seguridad. Nuestro equipo cumple los protocolos de cada cliente sin excepciones.',
+  },
+  {
+    icon: Leaf,
+    title: 'Capacidad para proyectos de gran escala',
+    body: 'Naves de más de 100,000 m², complejos logísticos multifrente, desarrollos de múltiples etapas. Tenemos la estructura y experiencia para proyectos de alta demanda.',
   },
 ]
 
