@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { motion } from 'framer-motion'
-import { CheckCircle, Clock, Leaf, Lock, Microscope, Users } from 'lucide-react'
+import { CheckCircle, Clock, Microscope, Users } from 'lucide-react'
 
 function useInView(threshold = 0.15) {
   const ref = useRef<HTMLDivElement>(null)
@@ -38,16 +38,6 @@ const differentiators = [
     icon: Users,
     title: 'Trayectoria comprobada',
     body: 'Más de 30 años ejecutando proyectos para empresas de manufactura, logística, alimentos y sector corporativo. Sabemos lo que exige cada industria y cómo cumplirlo.',
-  },
-  {
-    icon: Lock,
-    title: 'Protocolos de seguridad industrial',
-    body: 'Operamos dentro de parques y naves industriales con normas estrictas de acceso y seguridad. Nuestro equipo cumple los protocolos de cada cliente sin excepciones.',
-  },
-  {
-    icon: Leaf,
-    title: 'Capacidad para proyectos de gran escala',
-    body: 'Naves de más de 100,000 m², complejos logísticos multifrente, desarrollos de múltiples etapas. Tenemos la estructura y experiencia para proyectos de alta demanda.',
   },
 ]
 
