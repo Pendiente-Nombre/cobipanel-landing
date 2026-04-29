@@ -55,7 +55,14 @@ export const projects: Project[] = [
     scope:
       'Muros de tablaroca · Plafones de suspensión · Pintura · Instalación de alfombras, pisos vinílicos y zócalos vinílicos · Instalación de loseta cerámica · Pisos antiestáticos',
     principalImage: '/assets/projects/genesis/principal.png',
-    galleryImages: [],
+    galleryImages: [
+      '/assets/projects/genesis/gallery-01.png',
+      '/assets/projects/genesis/gallery-02.png',
+      '/assets/projects/genesis/gallery-03.png',
+      '/assets/projects/genesis/gallery-04.png',
+      '/assets/projects/genesis/gallery-05.png',
+      '/assets/projects/genesis/gallery-06.png',
+    ],
   },
   {
     id: 'seven-days',
@@ -69,7 +76,14 @@ export const projects: Project[] = [
     scope:
       'Muros de tablaroca · Plafones de nube · Pintura · Instalación de loseta cerámica · Instalación de cancelería de aluminio y vidrio · Instalación de mamparas de baño',
     principalImage: '/assets/projects/seven-days/principal.png',
-    galleryImages: [],
+    galleryImages: [
+      '/assets/projects/seven-days/gallery-01.png',
+      '/assets/projects/seven-days/gallery-02.png',
+      '/assets/projects/seven-days/gallery-03.png',
+      '/assets/projects/seven-days/gallery-04.png',
+      '/assets/projects/seven-days/gallery-05.png',
+      '/assets/projects/seven-days/gallery-06.png',
+    ],
   },
   {
     id: 'intermex',
@@ -83,7 +97,12 @@ export const projects: Project[] = [
     scope:
       'Colocación de canopys a base de acero · Cancelería de aluminio y cristal · Lijado y resanado de muros de concreto en interior de nave · Fachada integral a base de perfil nariz y cristal tintex 6mm',
     principalImage: '/assets/projects/intermex/principal.png',
-    galleryImages: [],
+    galleryImages: [
+      '/assets/projects/intermex/gallery-01.jpeg',
+      '/assets/projects/intermex/gallery-02.jpeg',
+      '/assets/projects/intermex/gallery-03.jpeg',
+      '/assets/projects/intermex/gallery-04.jpeg',
+    ],
   },
   {
     id: 'udm',
@@ -97,6 +116,10 @@ export const projects: Project[] = [
     scope:
       'Forro de puente de acceso con panel de aluminio · Subestructura de tubular de aluminio · Suministro y colocación de escaleras de acero inoxidable para edificio de 5 niveles',
     principalImage: '/assets/projects/udm/principal.png',
-    galleryImages: [],
+    galleryImages: [
+      '/assets/projects/udm/gallery-01.jpeg',
+      '/assets/projects/udm/gallery-02.jpeg',
+      '/assets/projects/udm/gallery-03.jpeg',
+    ],
   },
 ]
