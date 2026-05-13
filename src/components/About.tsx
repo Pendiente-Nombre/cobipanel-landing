@@ -18,10 +18,10 @@ function useInView(threshold = 0.2) {
 }
 
 const stats = [
-  { value: '+30', label: 'Años de trayectoria' },
+  { value: '+50', label: 'Proyectos ejecutados' },
   { value: '7+', label: 'Estados del país' },
   { value: '100%', label: 'Compromiso con la calidad' },
-  { value: '0', label: 'Tolerancia a defectos' },
+  { value: '+10', label: 'Empresas líderes atendidas' },
 ]
 
 export default function About() {
