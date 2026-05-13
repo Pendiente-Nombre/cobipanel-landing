@@ -96,11 +96,11 @@ export const projects: Project[] = [
       'Segunda intervención en el desarrollo Seven Days Gold en Querétaro, manteniendo el mismo estándar de calidad y precisión en acabados arquitectónicos que caracteriza a Cobipanel en proyectos de alto nivel.',
     scope:
       'Muros de tablaroca · Plafones de nube · Pintura · Instalación de loseta cerámica · Instalación de cancelería de aluminio y vidrio · Instalación de mamparas de baño',
-    principalImage: '/assets/projects/seven-days-2/gallery-02.png',
+    principalImage: '/assets/projects/seven-days-2/gallery-03.png',
     galleryImages: [
       '/assets/projects/seven-days-2/principal.png',
       '/assets/projects/seven-days-2/gallery-01.png',
-      '/assets/projects/seven-days-2/gallery-03.png',
+      '/assets/projects/seven-days-2/gallery-02.png',
     ],
   },
   {
