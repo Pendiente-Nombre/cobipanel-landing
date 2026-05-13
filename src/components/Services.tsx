@@ -28,9 +28,9 @@ function useInView(threshold = 0.15) {
 const services = [
   {
     icon: LayoutTemplate,
-    title: 'Muros de Tablaroca',
+    title: 'Muros de Paneles de Yeso',
     description:
-      'Instalación de sistemas de tablaroca para muros interiores en proyectos industriales, corporativos y de alto nivel con acabados de precisión.',
+      'Instalación de sistemas de paneles de yeso para muros interiores en proyectos industriales, corporativos y de alto nivel con acabados de precisión.',
   },
   {
     icon: Grid3x3,
@@ -42,25 +42,25 @@ const services = [
     icon: Paintbrush,
     title: 'Pintura',
     description:
-      'Aplicación de sistemas de pintura en interiores y exteriores bajo especificaciones técnicas precisas, garantizando durabilidad y acabado de calidad.',
+      'Aplicación de pintura en interiores y exteriores bajo especificaciones técnicas precisas, garantizando durabilidad y acabado de calidad.',
   },
   {
     icon: Layers,
-    title: 'Alfombras y Zócalos Vinílicos',
+    title: 'Alfombras y Zocalos Vinílicos',
     description:
-      'Instalación de alfombras y zoclos vinílicos en espacios corporativos, educativos e industriales con atención al detalle en cada terminación.',
+      'Instalación de alfombras y zocalos vinílicos en espacios corporativos, educativos e industriales con atención al detalle en cada terminación.',
   },
   {
     icon: Grid2x2,
     title: 'Loseta Cerámica',
     description:
-      'Colocación de loseta cerámica en pisos y muros con niveles y juntas perfectas para proyectos que exigen precisión técnica y estética.',
+      'Colocación de losetas cerámica en pisos y muros para proyectos que exigen precisión técnica y estética.',
   },
   {
     icon: Layers2,
     title: 'Pisos Antiestáticos y Vinílicos',
     description:
-      'Instalación de pisos antiestáticos para entornos industriales y tecnológicos, y pisos vinílicos de alto tráfico para espacios corporativos y logísticos.',
+      'Instalación de pisos antiestáticos para entornos médicos, industriales y tecnológicos. Además de pisos vinílicos para espacios corporativos y logísticos.',
   },
 ]
 
