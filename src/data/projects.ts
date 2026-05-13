@@ -86,6 +86,24 @@ export const projects: Project[] = [
     ],
   },
   {
+    id: 'seven-days-2',
+    name: 'Seven Days Gold — Sucursal 2',
+    client: 'Seven Days Gold',
+    location: 'Querétaro',
+    state: 'Querétaro',
+    category: 'Comercial / Desarrollo',
+    description:
+      'Segunda intervención en el desarrollo Seven Days Gold en Querétaro, manteniendo el mismo estándar de calidad y precisión en acabados arquitectónicos que caracteriza a Cobipanel en proyectos de alto nivel.',
+    scope:
+      'Muros de tablaroca · Plafones de nube · Pintura · Instalación de loseta cerámica · Instalación de cancelería de aluminio y vidrio · Instalación de mamparas de baño',
+    principalImage: '/assets/projects/seven-days-2/principal.png',
+    galleryImages: [
+      '/assets/projects/seven-days-2/gallery-01.png',
+      '/assets/projects/seven-days-2/gallery-02.png',
+      '/assets/projects/seven-days-2/gallery-03.png',
+    ],
+  },
+  {
     id: 'intermex',
     name: 'Intermex — Puerto Interior',
     client: 'Intermex',
@@ -120,6 +138,24 @@ export const projects: Project[] = [
       '/assets/projects/udm/gallery-01.jpeg',
       '/assets/projects/udm/gallery-02.jpeg',
       '/assets/projects/udm/gallery-03.jpeg',
+    ],
+  },
+  {
+    id: 'truper',
+    name: 'Truper',
+    client: 'Truper',
+    location: 'Jilotepec',
+    state: 'Estado de México',
+    category: 'Industrial / Corporativo',
+    description:
+      'Ejecución de acabados arquitectónicos en instalaciones de Truper en Jilotepec, Estado de México. Proyecto desarrollado con altos estándares de calidad y cumplimiento de tiempos para una de las marcas de herramientas más reconocidas del país.',
+    scope:
+      'Muros de tablaroca · Plafones · Cancelería de aluminio y cristal · Pintura',
+    principalImage: '/assets/projects/truper/principal.png',
+    galleryImages: [
+      '/assets/projects/truper/gallery-01.png',
+      '/assets/projects/truper/gallery-02.png',
+      '/assets/projects/truper/gallery-03.png',
     ],
   },
 ]
