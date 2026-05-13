@@ -30,7 +30,7 @@ function ProjectCard({ project, index, onClick }: { project: Project; index: num
       ref={ref}
       initial={{ opacity: 0, y: 30 }}
       animate={visible ? { opacity: 1, y: 0 } : {}}
-      transition={{ duration: 0.6, delay: (index % 3) * 0.1 }}
+      transition={{ duration: 0.6, delay: (index % 4) * 0.1 }}
       className="group cursor-pointer"
       onClick={onClick}
     >
@@ -128,8 +128,8 @@ export default function Projects() {
           </motion.p>
         </div>
 
-        {/* Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 xl:gap-10">
+        {/* Grid 4x2 */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {projects.map((p, i) => (
             <ProjectCard
               key={p.id}
