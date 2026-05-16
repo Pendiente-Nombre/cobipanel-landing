@@ -22,7 +22,7 @@ const contactInfo = [
   {
     icon: Mail,
     label: 'Correo electrónico',
-    value: 'Jpablo.cobian@cobipanel.com',
+    value: 'jpablo.cobian@cobipanel.com',
     placeholder: false,
   },
   {
