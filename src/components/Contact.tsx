@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { motion } from 'framer-motion'
-import { Mail, Phone, MapPin, Send } from 'lucide-react'
+import { Mail, MapPin, Send } from 'lucide-react'
 
 function useInView(threshold = 0.15) {
   const ref = useRef<HTMLDivElement>(null)
@@ -20,12 +20,6 @@ function useInView(threshold = 0.15) {
 
 const contactInfo = [
   {
-    icon: Phone,
-    label: 'Teléfono',
-    value: '442-273-9254',
-    placeholder: false,
-  },
-  {
     icon: Mail,
     label: 'Correo electrónico',
     value: 'Jpablo.cobian@cobipanel.com',
@@ -41,7 +35,7 @@ const contactInfo = [
 
 export default function Contact() {
   const { ref, visible } = useInView()
-  const [form, setForm] = useState({ nombre: '', empresa: '', correo: '', telefono: '', mensaje: '' })
+  const [form, setForm] = useState({ nombre: '', empresa: '', correo: '', mensaje: '' })
   const [sent, setSent] = useState(false)
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -168,34 +162,19 @@ export default function Contact() {
                   </div>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-xs font-semibold text-navy-800/50 font-archivo tracking-wide uppercase mb-1.5">
-                      Correo electrónico *
-                    </label>
-                    <input
-                      type="email"
-                      name="correo"
-                      value={form.correo}
-                      onChange={handleChange}
-                      required
-                      placeholder="correo@empresa.com"
-                      className="w-full border border-navy-800/15 rounded px-4 py-3 text-sm font-archivo text-navy-800 placeholder:text-navy-800/30 focus:outline-none focus:border-amber-500 transition-colors duration-200"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-xs font-semibold text-navy-800/50 font-archivo tracking-wide uppercase mb-1.5">
-                      Teléfono
-                    </label>
-                    <input
-                      type="tel"
-                      name="telefono"
-                      value={form.telefono}
-                      onChange={handleChange}
-                      placeholder="+52 55 0000 0000"
-                      className="w-full border border-navy-800/15 rounded px-4 py-3 text-sm font-archivo text-navy-800 placeholder:text-navy-800/30 focus:outline-none focus:border-amber-500 transition-colors duration-200"
-                    />
-                  </div>
+                <div>
+                  <label className="block text-xs font-semibold text-navy-800/50 font-archivo tracking-wide uppercase mb-1.5">
+                    Correo electrónico *
+                  </label>
+                  <input
+                    type="email"
+                    name="correo"
+                    value={form.correo}
+                    onChange={handleChange}
+                    required
+                    placeholder="correo@empresa.com"
+                    className="w-full border border-navy-800/15 rounded px-4 py-3 text-sm font-archivo text-navy-800 placeholder:text-navy-800/30 focus:outline-none focus:border-amber-500 transition-colors duration-200"
+                  />
                 </div>
 
                 <div>
