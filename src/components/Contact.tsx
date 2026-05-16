@@ -56,6 +56,7 @@ export default function Contact() {
           nombre: form.nombre,
           empresa: form.empresa,
           correo: form.correo,
+          _replyto: form.correo,
           mensaje: form.mensaje,
         }),
       })
