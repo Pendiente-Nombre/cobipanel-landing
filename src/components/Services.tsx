@@ -46,9 +46,9 @@ const services = [
   },
   {
     icon: Layers,
-    title: 'Alfombras y Zocalos Vinílicos',
+    title: 'Alfombras y Zoclos Vinílicos',
     description:
-      'Instalación de alfombras y zocalos vinílicos en espacios corporativos, educativos e industriales con atención al detalle en cada terminación.',
+      'Instalación de alfombras y zoclos vinílicos en espacios corporativos, educativos e industriales con atención al detalle en cada terminación.',
   },
   {
     icon: Grid2x2,
