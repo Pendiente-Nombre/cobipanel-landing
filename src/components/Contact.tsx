@@ -37,15 +37,38 @@ export default function Contact() {
   const { ref, visible } = useInView()
   const [form, setForm] = useState({ nombre: '', empresa: '', correo: '', mensaje: '' })
   const [sent, setSent] = useState(false)
+  const [sending, setSending] = useState(false)
+  const [error, setError] = useState(false)
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setForm(prev => ({ ...prev, [e.target.name]: e.target.value }))
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Placeholder: wire to backend / email service later
-    setSent(true)
+    setSending(true)
+    setError(false)
+    try {
+      const res = await fetch('https://formspree.io/f/xgoqwywa', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({
+          nombre: form.nombre,
+          empresa: form.empresa,
+          correo: form.correo,
+          mensaje: form.mensaje,
+        }),
+      })
+      if (res.ok) {
+        setSent(true)
+      } else {
+        setError(true)
+      }
+    } catch {
+      setError(true)
+    } finally {
+      setSending(false)
+    }
   }
 
   return (
@@ -192,12 +215,19 @@ export default function Contact() {
                   />
                 </div>
 
+                {error && (
+                  <p className="text-red-500 text-xs font-archivo text-center">
+                    Ocurrió un error al enviar. Por favor intente de nuevo.
+                  </p>
+                )}
+
                 <button
                   type="submit"
-                  className="w-full bg-amber-500 hover:bg-amber-600 text-navy-900 font-semibold py-4 rounded transition-colors duration-200 font-archivo flex items-center justify-center gap-2"
+                  disabled={sending}
+                  className="w-full bg-amber-500 hover:bg-amber-600 disabled:opacity-60 text-navy-900 font-semibold py-4 rounded transition-colors duration-200 font-archivo flex items-center justify-center gap-2"
                 >
                   <Send size={16} />
-                  Enviar solicitud
+                  {sending ? 'Enviando...' : 'Enviar solicitud'}
                 </button>
 
                 <p className="text-navy-800/35 text-xs font-archivo text-center">
